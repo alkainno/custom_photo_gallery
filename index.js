@@ -19,16 +19,33 @@ pop_content.appendChild(pop_BoxNext);
 document.body.appendChild(pop_container);
 let currentIndex = 1;
 
+// pop_BoxPrev.style.display = "none";
+// pop_BoxNext.style.display = "block";
 function showbox(n) {
   if (n > gallery_item.length) {
     index = 1;
   } else if (n < 1) {
     index = gallery_item.length;
+  } else {
+    index = n;
   }
+
   let img_location = gallery_item[index - 1].children[0].getAttribute("src");
   pop_BoxImg.setAttribute("src", img_location);
+
+  // Disable/enable arrows based on index
+  if (index === 1) {
+    pop_BoxPrev.style.display = "none";
+  } else {
+    pop_BoxPrev.style.display = "block";
+  }
+
+  if (index === gallery_item.length) {
+    pop_BoxNext.style.display = "none";
+  } else {
+    pop_BoxNext.style.display = "block";
+  }
 }
-console.log(showbox(n));
 
 function currentImage() {
   pop_container.style.display = "block";

@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #fff;
-    width: 94%;
+    /* width: 94%; */
     justify-content: space-between;
     padding: 10px;
     margin: 0 auto;
@@ -122,8 +122,9 @@
     }
 
     .gallery-item {
-        width: 23.5%;
-        height: 14vw;
+        width: 23.9%;
+        height: 15vw;
+        margin-bottom: -2px;
     }
 
     .pop-content {
@@ -140,8 +141,9 @@
     }
 
     .gallery-item {
-        width: 31.5%;
-        height: 18vw;
+        width: 31.9%;
+        height: 20vw;
+        margin-bottom: -1px;
     }
 
     .pop-content {
@@ -157,8 +159,9 @@
     }
 
     .gallery-item {
-        width: 47.5%;
-        height: 28vw;
+        width: 48.5%;
+        height: 33vw;
+        margin-bottom: -5px;
     }
 
     .fa-angle-right,
